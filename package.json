@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/priyamshankar/dailyReactChallange/issues"
   },
-  "homepage": "https://github.com/priyamshankar/dailyReactChallange#readme"
+  "homepage": "https://github.com/priyamshankar/dailyReactChallange#readme",
+  "dependencies": {
+    "react-router-dom": "^6.2.1"
+  }
 }
