@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Logout from './components/Logout';
 import Auth from './components/Auth';
 import Signup from './components/Signup';
+import Error from './components/Errorpg';
 
 function App() {
   return (
@@ -23,8 +24,7 @@ function App() {
     <Route path='/auth' element={<Auth/>}/>
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/nav' element={<Navbar/>}/>
-    
-    
+    <Route path='*' element={<Error/>}/>
 
 
     </Routes>
