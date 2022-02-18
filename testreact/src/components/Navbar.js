@@ -1,13 +1,13 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/">
             login site
-          </link>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,43 +22,43 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <link className="nav-link active" to="/">
+                <Link className="nav-Link active" to="/">
                   Home
-                </link>
+                </Link>
               </li>
               <li className="nav-item">
-                <link className="nav-link" to="/login">
+                <Link className="nav-Link" to="/login">
                   Login
-                </link>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <link
-                  className="nav-link dropdown-toggle"
+                <Link
+                  className="nav-Link dropdown-toggle"
                   to="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                 >
                   Expand
-                </link>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <link className="dropdown-item" to="/logout">
+                    <Link className="dropdown-item" to="/logout">
                       Logout
-                    </link>
+                    </Link>
                   </li>
                   <li>
-                    <link className="dropdown-item" to="/auth">
+                    <Link className="dropdown-item" to="/auth">
                       Authentication
-                    </link>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <link className="dropdown-item" to="/signup">
+                    <Link className="dropdown-item" to="/signup">
                       signup
-                    </link>
+                    </Link>
                   </li>
                 </ul>
               </li>

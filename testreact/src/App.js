@@ -11,7 +11,7 @@ import Signup from './components/Signup';
 function App() {
   return (
     <>
-    {/* <Navbar/> */}
+    <Navbar/>
     {/* <Home/> */}
     {/* <Login/> */}
     <Routes>
@@ -19,8 +19,15 @@ function App() {
 
     
     <Route path="/login" element={<Login />} />
-    </Routes>
+    <Route path='/logout' element={<Logout/>}/>
+    <Route path='/auth' element={<Auth/>}/>
+    <Route path='/signup' element={<Signup/>}/>
+    <Route path='/nav' element={<Navbar/>}/>
+    
+    
 
+
+    </Routes>
     </>
   )
 }
