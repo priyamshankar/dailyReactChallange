@@ -30,7 +30,7 @@ userDetSchema.methods.generateAuthToken = async function () {
     } catch (error) {
         console.log(error);
         console.log("error");
-        res.send(error);
+        // res.send(error);
     }
 }
 
